@@ -21,3 +21,6 @@ print('x_train shape: ', x_train.shape)
 print(x_train.shape[0], ' train samples')
 print(x_test.shape[0], ' test samples')
 
+# Display 16 example images
+for i in range(16):
+    tf.keras.preprocessing.image.array_to_img(x_train[i]).show()
